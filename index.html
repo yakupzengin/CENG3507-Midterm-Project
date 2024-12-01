@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/initial.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <!-- JavaScript File  -->
+    <script type="module" src="scripts/utils/displayCounts.js" defer></script>
+
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <div class="navbar-brand">
+            <a href="/">Student Management System</a>
+        </div>
+        <nav class="navbar-links">
+            <a href="/index.html">Homepage</a>
+            <a href="/operations.html">Operations</a>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="welcome-banner">
+        <h1>Welcome to the Student Management System</h1>
+        <p>Manage your students and courses.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content-container">
+        <div class="sidebar">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p class="stat-number total-students"></p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Courses</h3>
+                <p class="stat-number total-courses"></p>
+
+            </div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <section class="dashboard">
+            <div class="dashboard-card">
+                <img src="/assets/student-icon.png" alt="student-setting-icon">
+                <h3>Manage Students</h3>
+                <ul>
+                    <li>Add or edit student details</li>
+                    <li>View student performance</li>
+                    <li>Remove students</li>
+                </ul>
+                <a href="/operations.html">
+                    <button>
+                        Manage
+                    </button>
+                </a>
+            </div>
+            <div class="dashboard-card">
+                <img src="/assets/course-icon.png" alt="course-setting-icon">
+                <h3>Manage Courses</h3>
+                <ul>
+                    <li>Add or update courses</li>
+                    <li>View course details</li>
+                    <li>Delete courses</li>
+                </ul>
+                <a href="/operations.html">
+                    <button>
+                        Manage
+                    </button>
+                </a>
+            </div>
+            <div class="dashboard-card">
+                <img src="/assets/search-icon.png" alt="search-icon">
+                <h3>Search</h3>
+                <ul>
+                    <li>Search and Retrieve Student Scores</li>
+                    <li>Analyze Course Data</li>
+                    <li>View Student & Course Analytics</li>
+                </ul>
+                <a href="/operations.html">
+                    <button>
+                        Manage
+                    </button>
+                </a>
+            </div>
+        </section>
+    
+    </main>
+
+
+</body>
+</html>

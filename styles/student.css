@@ -1,0 +1,233 @@
+/* Students Management */
+.students-management {
+    flex: 1 1 calc(300px - 2rem); 
+    max-width: 80%;
+    padding: 2rem;
+    background: var(--card-bg-color);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+
+}
+
+
+/* Students Management heading */
+.students-management h1, .students-management h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.add-student-form {
+    background: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+}
+
+.add-student-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--input-focus-color);
+    outline: none;
+}
+
+.addStudentFormButton,
+.addStudentToCourseFormButton {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.8rem;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+    margin-top: 1rem;
+    
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--input-border-color);
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background: var(--card-bg-color);
+}
+
+tr:hover td {
+    background: var(--hover-bg-color);
+}
+.students-list button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.students-list button:hover {
+    background-color: var(--accent-color);
+}
+
+.students-list {
+    margin-top: 2rem;
+}
+
+/* Detail Tables */
+.detail-table,
+.lecture-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+
+.detail-table th, .detail-table td, .lecture-table th, .lecture-table td {
+    /* padding: 0.8rem; */
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+/* Responsive design for screen widths up to 768px */
+@media (max-width: 768px) {
+    .students-management {
+        max-width: 100%;
+    
+    }
+    .addStudentFormButton,
+    .addStudentToCourseFormButton {
+        padding: 8px;
+        margin: 5px;
+    }
+    
+}
+@media (max-width:679px){
+    .more-info-btn{
+        margin-top: 5px;
+    }
+    table,th,td {
+        text-align: center;
+    }
+    
+}
+/* Responsive design for screen widths up to 580px */
+@media (max-width: 580px) {
+    .students-management{
+        padding: 10px;
+
+    }
+    .add-student-form {
+        padding: 10px;
+
+
+    }
+    .add-student-to-course-form select{
+        padding: 10px;
+
+    }
+    .form-group input{
+        padding: 10px;
+    }
+    
+    button{
+        padding: 10px;
+    }
+    th, td {
+        padding: 5px;
+
+    } 
+    #studentsTableBody button{
+        padding: 8px;
+        margin: 5px;
+    }
+    .detail-table th, .detail-table td, .lecture-table th, .lecture-table td {
+        font-size: small;
+    }
+
+}
+/* Responsive design for screen widths up to 390px */
+@media only screen and (max-width: 390px) {
+    .students-management{
+        padding: 3px;
+
+    }
+    .add-student-form {
+        padding: 3px;
+
+
+    }
+    .add-student-to-course-form select{
+        padding: 3px;
+
+    }
+    .form-group input{
+        padding: 3px;
+    }
+    
+    button{
+        padding: 3px;
+    }
+    th, td {
+        padding: 3px;
+
+    } 
+    #studentsTableBody button{
+        padding: 2px;
+        margin: 5px 0;
+    }
+
+    .detail-table th, .detail-table td, .lecture-table th, .lecture-table td {
+        font-size: small;
+        padding: 5px;
+    }
+
+}
+
